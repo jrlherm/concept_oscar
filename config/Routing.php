@@ -1,10 +1,12 @@
 <?php
 
 $route = [
+    'loader' => [ 'controller' => 'PageController' , 'method' => 'loaderAction'],
     'home' => [ 'controller' => 'PageController' , 'method' => 'homeAction'],
-    'spent' => [ 'controller' => 'PageController' , 'method' => 'spentAction'],
-    'delete' => [ 'controller' => 'PageController' , 'method' => 'deleteAction'],
-    'update' => [ 'controller' => 'PageController' , 'method' => 'updateAction'],
+    'date' => [ 'controller' => 'PageController' , 'method' => 'dateAction'],
+    'global' => [ 'controller' => 'PageController' , 'method' => 'globalAction'],
+    'actor' => [ 'controller' => 'PageController' , 'method' => 'actorAction'],
+    'movie' => [ 'controller' => 'PageController' , 'method' => 'movieAction'],
 ];
 
-$defaultRoute = 'home';
+$defaultRoute = 'loader';
