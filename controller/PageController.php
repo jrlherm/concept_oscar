@@ -29,12 +29,16 @@ class PageController
         /* Model access */
 
         //$result = $this->request->getAllSpent();
-        //$result = $this->request->test();
-        //print_r( $result);
+        $result = $this->request->test();
+        foreach($result as $item){
+            foreach($item as $value){
+                echo $value->id;
+                echo '<br>';
+                echo '<br>';
+            }
+        }
 
         /* Views */
-
-        echo __FUNCTION__;
 
         include APP_VIEW_DIR."partial/header.php";
         include APP_VIEW_DIR."page/loader.php";

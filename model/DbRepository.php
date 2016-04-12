@@ -19,15 +19,25 @@ class dbRepository
         $this->pdo = $pdo;
     }
 
-    public function test()
+    public function getMovie($id)
     {
         $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, 'https://api.themoviedb.org/3/movie/550?api_key=7293cd7321f0ae4ca7110422285f7f35');
+        curl_setopt($curl, CURLOPT_URL, 'https://api.themoviedb.org/3/movie/' . $id . '?api_key=7293cd7321f0ae4ca7110422285f7f35&query=TheBigShort');
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($curl);
         curl_close($curl);
 
-        return json_decode($result); // Json decode
+        return json_decode($result);
     }
 
+    public function getActor($id)
+    {
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, 'https://api.themoviedb.org/3/person/' . $id . '?api_key=7293cd7321f0ae4ca7110422285f7f35&query=TheBigShort');
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($curl);
+        curl_close($curl);
+
+        return json_decode($result);
+    }
 }
