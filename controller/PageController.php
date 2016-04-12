@@ -22,6 +22,27 @@ class PageController
     }
 
     /**
+     * Loader controller
+     */
+    public function loaderAction()
+    {
+        /* Model access */
+
+        //$result = $this->request->getAllSpent();
+        //$result = $this->request->test();
+        //print_r( $result);
+
+        /* Views */
+
+        echo __FUNCTION__;
+
+        include APP_VIEW_DIR."partial/header.php";
+        include APP_VIEW_DIR."page/loader.php";
+        include APP_VIEW_DIR."partial/footer.php";
+    }
+
+
+    /**
      * Home controller
      */
     public function homeAction()
