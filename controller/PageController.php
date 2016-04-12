@@ -29,9 +29,9 @@ class PageController
         /* Model access */
 
         //$result = $this->request->getAllSpent();
-        $result = $this->request->test();
+        //$result = $this->request->test();
+        //print_r( $result);
 
-        print_r( $result);
         /* Views */
 
         include APP_VIEW_DIR."partial/header.php";
