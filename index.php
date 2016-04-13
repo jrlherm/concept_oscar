@@ -1,8 +1,8 @@
 <?php
 
-require_once "../Controller/PageController.php";
-require_once "../Model/DbRepository.php";
-require_once "../Config.php";
+require_once "Controller/PageController.php";
+require_once "Model/DbRepository.php";
+require_once "Config.php";
 
 $PageController = new \Controller\PageController($pdo);
 

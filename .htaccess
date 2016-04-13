@@ -1,10 +1,18 @@
+#Options +FollowSymLinks
+#RewriteEngine On
+#RewriteBase /concept_oscar/
+#
+#RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#
+#RewriteRule ^ %1 [L,NE,R=302]
+#RewriteRule ^((?!public/).*)$ public/index.php?p=$1 [L,NC]
+
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /concept_oscar/
 
-RewriteCond %{THE_REQUEST} /Public/([^\s?]*) [NC]
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 
-RewriteRule ^ %1 [L,NE,R=302]
-RewriteRule ^((?!Public/).*)$ public/index.php?p=$1 [L,NC]
+RewriteRule ^(.*)$ ./index.php?p=$1
