@@ -41,6 +41,7 @@ class PageController
         /* Views */
 
         include APP_VIEW_DIR."page/loader.php";
+        include APP_VIEW_DIR."partial/footer.php";
     }
 
 
@@ -59,6 +60,25 @@ class PageController
 
         include APP_VIEW_DIR."partial/header.php";
         include APP_VIEW_DIR."page/home.php";
+        include APP_VIEW_DIR."partial/footer.php";
+    }
+
+
+    /**
+     * Date controller
+     */
+    public function dateAction()
+    {
+        /* Model access */
+
+        //$result = $this->request->getAllSpent();
+        //$result = $this->request->test();
+        //print_r( $result);
+
+        /* Views */
+
+        include APP_VIEW_DIR."partial/header.php";
+        include APP_VIEW_DIR."page/date.php";
         include APP_VIEW_DIR."partial/footer.php";
     }
 
