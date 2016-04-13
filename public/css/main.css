@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
     display: block;
 }
 
@@ -197,7 +197,7 @@ select[multiple] {
 #loader .loader {
     display: inline-block;
     height: 10px;
-    width: 150px;
+    width: 300px;
     background: -webkit-linear-gradient(90deg, #c5a54e, transparent); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(90deg, #c5a54e, transparent); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(90deg, #c5a54e, transparent); /* For Firefox 3.6 to 15 */
@@ -210,6 +210,15 @@ select[multiple] {
     height: 30px;
     transform: rotate(90deg) translateX(4px);
     margin-left: 7px;
+    transition: linear 0.3s;
+    position: relative;
+    z-index: -1;
+}
+
+
+#loader .arrow-hover {
+    transform: rotate(90deg) translate(4px, -225px) !important;
+    transition: linear 0.3s;
 }
 
 #loader .home {
@@ -223,24 +232,29 @@ select[multiple] {
     margin-top: 30px;
 }
 
-#loader footer {
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+
+footer {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 25%;
 }
 
-#loader ul {
+footer ul {
     text-align: right;
     margin-bottom: 30px;
     margin-right: 20px;
 }
 
-#loader li {
+footer li {
     list-style: none;
     display: inline-block;
     margin-right: 15px;
     padding: 0 10px;
+    padding-right: 5px;
 
 
     vertical-align: middle;
@@ -257,7 +271,7 @@ select[multiple] {
     transition-duration: 0.3s;
 }
 
-#loader a {
+footer a {
     font-family: BebasNeue, sans-serif;
     font-weight: 400;
     color: #c4c4c4;
@@ -266,7 +280,7 @@ select[multiple] {
     text-decoration: none;
 }
 
-#loader li:before {
+footer li:before {
     content: "";
     position: absolute;
     z-index: 2;
@@ -289,11 +303,89 @@ select[multiple] {
     margin-top: 7px;
 }
 
-#loader li:hover:before {
+footer li:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
+/*------------------------------------*\
+    HOME
+\*------------------------------------*/
+
+.home .intro {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/background-home.jpg') center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.home .presentation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    font-size: 0;
+}
+
+.home .presentation h2 {
+    font-family: BebasNeue, sans-serif;
+    font-weight: 400;
+    color: #c5a54e;
+    font-size: 92px;
+    letter-spacing: 11px;
+}
+
+.home .loader {
+    display: inline-block;
+    height: 10px;
+    width: 300px;
+    background: -webkit-linear-gradient(90deg, #c5a54e, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #c5a54e, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c5a54e, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #c5a54e, transparent); /* Standard syntax */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home .presentation p {
+    color: #c4c4c4;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.home .date {
+    background-color: #0c0c0c;
+    text-align: center;
+}
+
+.home .date h1{
+    font-family: BebasNeue, sans-serif;
+    font-weight: 300;
+    color: #c5a54e;
+    font-size: 32px;
+    letter-spacing: 11px;
+
+    padding-top: 150px;
+}
+
+.home .date h3{
+    font-family: Bauer, sans-serif;
+    font-weight: 400;
+    color: #fefefe;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.home .year-selector{
+    margin-top: 100px;
+    height: 400px;
+    background-color: red;
+}
 /*------------------------------------*\
     TEST
 \*------------------------------------*/
