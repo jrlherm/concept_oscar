@@ -5,7 +5,7 @@
 */
 
 define('APP_ROOT_DIR', __DIR__);
-define('APP_VIEW_DIR', APP_ROOT_DIR.'/View/');
+define('APP_VIEW_DIR', APP_ROOT_DIR.'/view/');
 
 /**
  * DB Sql connection
