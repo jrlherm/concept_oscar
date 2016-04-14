@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Begin old code -->
+
+
+
+<!-- End old code -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--<title>Academy Awards Database Academy | Academy of Motion Picture Arts &amp; Sciences</title>-->
+<!--Begin old code -->
+    <title>
+        Results Page - Academy Awards&reg; Database - AMPAS
+
+    </title>
+<!-- end old code -->
+
+
+<!-- Begin old code -->
+<!--DisplayNavBar.jsp-->
+<script type="text/javascript">
+<!-- Comment to prevent JavaScript from being displayed in old browsers.
+function goChangeDisplay() {
+    if (document.changeDisplay.displayType.options[document.changeDisplay.displayType.selectedIndex].value != 0) {
+        document.changeDisplay.submit();
+    }
+}
+
+function printDisplay() {
+    window.print();
+}
+
+function printableResultsWindow() {
+    window.open("DisplayPrintableResults.jsp","printableResults","dependent=yes,width=700,height=500,screenX=10,screenY=10,left=10,top=10,menubar=no,resizable=yes,status=no,toolbar=no,scrollbars=yes");
+}
+
+function showHelp() {
+    window.open("help/helpMain.jsp", "help", "dependent=yes,width=700,height=500,screenX=10,screenY=10,left=10,top=10,menubar=no,resizable=yes,status=no,toolbar=no,scrollbars=yes");
+}
+function showStats(helpPage) {
+    if (helpPage == null) {
+	    helpPage="menu.jsp"
+		}
+		    window.open("help/helpMain.jsp?helpContentURL=" + helpPage, "help", "dependent=yes,width=700,height=500,screenX=10,screenY=10,left=10,top=10,menubar=no,resizable=yes,status=no,toolbar=no,scrollbars=yes");
+		    }
+
+function goNewSearch() {
+    document.newSearch.submit();
+}
+
+function goModifySearch() {
+    document.modifySearch.submit();
+}
+-->
+</script>
+<!--EndDisplayNavBar.jsp-->
+<!-- End old code -->
+<!-- END -->
+<!--meta tags and oscars.org style sheets and java scripts-->
+<!--This includes file should appear just before the link to the cascading style sheet.-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Copyright (C) 2014 Academy of Motion Picture Arts and Sciences" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<link rel="icon" type="image/png" href="http://www1.oscars.org/favicon.png" />
+<link href='fonts/Prestige_Elite_Univers_Futura_PT_HoeflerText4r.css' rel='stylesheet' type='text/css'/>
+         <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsMain-20141001.css";</style> 
+	     <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsInner-20141001.css";</style>
+<!--		 <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsMainNew-20141001.css";</style> -->
+		 <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsMainNew-20141001-awardsdb.css";</style> 
+		 <style type="text/css" media="print">@import "http://www1.oscars.org/vendor/old/css/oscarsPrint-20141001.css";</style>
+		 <script type="text/javascript" src="http://www1.oscars.org/vendor/old/scripts/1.7.1/jquery.min.js"></script>
+		 <script type="text/javascript" src="http://www1.oscars.org/vendor/old/scripts/oscars-20141001.js"></script>
+		 <script type="text/javascript">
+			var arrOpenLIElements = ['#li_1','#li_1_1'];
+			var strActiveLIElement = '#li_1_1';
+		</script>
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://www.oscars.org/vendor/css/oscars_ie6-081112.css" />    
+<![endif]-->
+
+<!--FLASH-->
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="http://www.oscars.org/vendor/scripts/AC_RunActiveContent.js" language="javascript"></script>
+
+<script type="text/javascript" language="javascript">
+function showNoms() {
+	window.open('http://www.oscars.org/awards/academyawards/82/nominees.html','noms','left=20,top=20,width=1100,height=700,toolbar=0,resizable=1,scrollbars=1');
+}
+</script>
+<!-- Universal Analytics 8/18/2014 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47510736-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="awards_display.css"/><!--made this the last style sheet, zf, 1/6/2010-->
+</head>
+<body>
+<!--This includes file comes right after the HeaderTop.html file and the link to the cascading style sheet.-->
+
+<div id="wrapperOuter">
+  <div id="wrapperInner">
+    <div id="header">
+        <header>
+        	<div class="site-header">
+              <div class="logo">
+                <a href="http://www.oscars.org/" style="left: 0px;">
+                  <img border="0" src="http://www1.oscars.org/vendor/old/images/logo.png" />
+                </a>
+              </div>
+              <div class="site-login">
+                <a href="https://www.members.oscars.org/">MEMBERS LOGIN</a>
+              </div>
+              <div class="site-search">
+                <!--<input type="text" value="" name="" id="">
+                <input type="image" src="images/icon-search.png" name="" id="">-->
+                
+                
+                <form accept-charset="UTF-8" id="search-block-form" method="post" action="http://www.oscars.org/search/site/" class="search-form" target="_self">
+                 <input type="text" maxlength="128" size="10" value="" name="search_block_form" id="edit-search-block-form--2" placeholder="" class="apachesolr-autocomplete unprocessed custom-search-box form-text form-autocomplete" title="" autocomplete="off" />
+                <input type="image" src="http://www1.oscars.org/vendor/old/images/icon-search.png" name="op" id="edit-submit" class="custom-search-button form-submit" alt="Search" />
+                <input type="hidden" value="form-s89VspXM23MBdbchNJTyFDcNTLLiZo-ocEyCWQtYero" name="form_build_id" />
+                <input type="hidden" value="search_block_form" name="form_id" />
+              </form>
+              
+                
+              </div>
+            </div>
+    
+            <div class="site-nav-wrapper">
+                <nav class="site-nav js-site-nav">
+                    <ul>
+                        <li class="site-nav-item js-site-nav-item" data-section="awards">Awards</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="museum">Museum</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="events">Events</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="explore">Explore</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="learn">Learn</li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="site-sub-nav-wrapper js-site-sub-nav-wrapper">
+                <nav class="site-sub-nav js-site-sub-nav">
+                    <ul data-section="awards">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/oscars">Oscars</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/governors">Governors Awards</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/sci-tech">Sci-Tech Awards</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/saa">Student Academy Awards</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/nicholl">Academy Nicholl Fellowships</a></li>
+                    </ul>
+    
+                    <ul data-section="museum">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/academy-museum">About the Museum</a></li>
+                    </ul>
+    
+                    <ul data-section="events">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/events">Calendar</a></li>
+						<li class="site-nav-sub-item"><a href="http://www.oscars.org/hollywoodcostume/">Hollywood Costume</a></li>
+                    </ul>
+    
+                    <ul data-section="explore">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/academy-collection">Collection Highlights</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/academy-story">Academy Story</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/news">News</a></li>
+                       <!-- <li class="site-nav-sub-item"><a href="http://www.oscars.org/member-voices">Member Voices</a></li>-->
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/videos-photos">Videos &amp; Photos</a></li>
+                        
+                    </ul>
+    
+                    <ul data-section="learn">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/film-archive">Academy Film Archive</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/library">Margaret Herrick Library</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/oral-history">Oral History</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/science-technology">Science &amp; Technology</a></li>                       
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/educational-programs">Educational Programs</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+        </header>
+    </div>
+
+   <div id="content">
+    <div id="main">
+		
+	<!--moved breadcrumbs above buttons, zf, 12/17/2009-->	
+		<p class="breadcrumb"> 
+		<a href="http://www.oscars.org/">Home</a> /
+		<a href="http://www.oscars.org/oscars">Oscars</a> / 
+		<a href="http://www.oscars.org/oscars/awards-databases/">Awards Databases </a> / Academy Awards Database</p>
+		<br style="clear:both">
+  <!--START AREA TO PLACE BODY CONTENT-->
+
+<!-- DisplayNavBar.jsp -->
+
+
+<!--START SUBHEADER -->
+
+
+                <form name="changeDisplay" action="BasicSearch" method="POST" target="_parent">
+
+<div id="buttonrow">
+<ul>
+<li>
+                   <a href="BasicSearch?action=newSearch" target="_parent" >New Search</a>
+</li>
+<li>
+                   <a href="BasicSearch?action=showSearchPage" target="_parent">Modify Search</a>
+</li>
+<li >
+                   <a href="javascript:showStats('statistics/indexStats.html')">Statistics</a> 
+</li>
+<li>
+				   <a href="#" onClick="window.open('http://aaspeechesdb.oscars.org','','menubar=yes, scrollbars=yes, resizable=yes, width=1000, height=700');" >Speeches</a><!--added link, zf 11/12/2013-->
+</li>
+<li>
+                   <a href="javascript:printableResultsWindow()()">Print</a>
+</li>
+<li>
+                   <a href="javascript:showHelp()" >Help</a>
+</li>
+<li class="last">
+                    
+                        
+                    <select name="displayType" size="1" class="jumpmenu" id="db_jump" onChange="goChangeDisplay()">
+                                <option value="0">&lt;Change View&gt;</option>
+                                <option value="1">Category (chron)</option>
+                                <option value="8">Category (alpha)</option>
+                                <option value="3">Film (alpha)</option>
+                                <option value="4">Film (chron)</option>
+                                <option value="6">Nominee (alpha)</option>
+                                <option value="7">Nominee (chron)</option>
+                                <option value="9"></option><!--changed option value from 0 to 9-->
+                                <option value="2">Distributor</option>
+                                <option value="5">Director (credited)</option>
+                                <option value="9"> -------------------------------------------</option><!--changed option value from 0 to 9-->
+                            </select>
+                            <input type="HIDDEN" name="action" value="searchLink">
+<input type="HIDDEN" name="BSFilmTitle" value="">
+<input type="HIDDEN" name="BSWinner" value="">
+<input type="HIDDEN" name="BSFromYear" value="3">
+<input type="HIDDEN" name="BSToYear" value="0">
+<input type="HIDDEN" name="BSNominee" value="">
+<input type="HIDDEN" name="BSSongTitle" value="">
+<input type="HIDDEN" name="BSCategoryExact" value="0">
+<input type="HIDDEN" name="BSFilmID" value="0">
+<input type="HIDDEN" name="BSNominationID" value="0">
+<input type="HIDDEN" name="BSNomineeID" value="0">
+<input type="HIDDEN" name="BSSort" value="">
+<input type="HIDDEN" name="ASWinnerOnlyInd" value="">
+<input type="HIDDEN" name="ASYearStart" value="0">
+<input type="HIDDEN" name="ASYearEnd" value="0">
+<input type="HIDDEN" name="ASFeatureFilmOnlyInd" value="">
+<input type="HIDDEN" name="ASShortFilmOnlyInd" value="">
+<input type="HIDDEN" name="ASForeignFilmOnlyInd" value="">
+<input type="HIDDEN" name="ASMaleOnlyInd" value="">
+<input type="HIDDEN" name="ASFemaleOnlyInd" value="">
+<input type="HIDDEN" name="ASDebutOnlyInd" value="">
+<input type="HIDDEN" name="ASPosthumousOnlyInd" value="">
+
+
+					</li>
+					</ul>
+</div><!--end div buttonrow-->
+            </form>
+        <!--END SUBHEADER -->
+
+
+<br clear=all>
+
+<!-- End DisplayNavBar.jsp -->    
+        </div><!--end main-->
+        <div id="aadb">		
+          
+<BR><p> Results displayed by award category; sort is alphabetical<BR>Win indicated by an asterisk (*)</p><BR>
+<dl>
+<dt>
+<b>ACTOR -- LEADING ROLE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1552&BSFromYear=3">ACTOR</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39055">George Arliss</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34723">Disraeli</A></I> {&quot;Benjamin Disraeli&quot;} </DIV>
+<DIV CLASS="noteIndent">[NOTE: As allowed by the award rules for this year, a single nomination could honor work in one or more films.  Though the final awards ballot listed both <i>Disraeli</i> and <i>The Green Goddess</i> in his nomination, the award was announced for only the <i>Disraeli</i> performance.  It has never been established as to why this was, but it possibly could have been because the original report from the Acting Branch Board of Judges only listed the <i>Disraeli</i> performance in the results of the nominations voting, or it could have been because on some of the final ballots, the voters had indicated the <i>Disraeli</i> performance over the other.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39056">George Arliss</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34725">The Green Goddess</A></I> {&quot;Oxonian, the Rajah of Rukh&quot;} </DIV>
+<DIV CLASS="noteIndent">[NOTE: As allowed by the award rules for this year, a single nomination could honor work in one or more films.  Though the final awards ballot listed both <i>Disraeli</i> and <i>The Green Goddess</i> in his nomination, the award was announced for only the <i>Disraeli</i> performance.  It has never been established as to why this was, but it possibly could have been because the original report from the Acting Branch Board of Judges only listed the <i>Disraeli</i> performance in the results of the nominations voting, or it could have been because on some of the final ballots, the voters had indicated the <i>Disraeli</i> performance over the other.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39057">Wallace Beery</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34717">The Big House</A></I> {&quot;'Machine Gun' Butch Schmidt&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39058">Maurice Chevalier</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34718">The Big Pond</A></I> {&quot;Pierre Mirande&quot;}; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34729">The Love Parade</A></I> {&quot;Count Alfred Renard&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39060">Ronald Colman</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34719">Bulldog Drummond</A></I> {&quot;Hugh 'Bulldog' Drummond&quot;}; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34721">Condemned</A></I> {&quot;Michel&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39062">Lawrence Tibbett</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34731">The Rogue Song</A></I> {&quot;Yegor&quot;} </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>ACTRESS -- LEADING ROLE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1555&BSFromYear=3">ACTRESS</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39063">Nancy Carroll</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34722">The Devil's Holiday</A></I> {&quot;Hallie Hobart&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39064">Ruth Chatterton</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34734">Sarah and Son</A></I> {&quot;Sarah Storm&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39065">Greta Garbo</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34716">Anna Christie</A></I> {&quot;Anna Christie&quot;}; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34732">Romance</A></I> {&quot;Madame Rita Cavallini&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39067">Norma Shearer</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34724">The Divorcee</A></I> {&quot;Jerry&quot;} </DIV>
+<DIV CLASS="noteIndent">[NOTE: As allowed by the award rules for this year, a single nomination could honor work in one or more films.  Though the final awards ballot listed both <i>The Divorcee</i> and <i>Their Own Desire</i> in her nomination, the award was announced for only the <i>The Divorcee</i> performance.  It has never been established as to why this was, but it possibly could have been because the original report from the Acting Branch Board of Judges only listed <i>The Divorcee</i> performance in the results of the nominations voting, or it could have been because on some of the final ballots, the voters had indicated the <i>The Divorcee</i> performance over the other.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39068">Norma Shearer</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34737">Their Own Desire</A></I> {&quot;Lucia 'Lally' Marlett&quot;} </DIV>
+<DIV CLASS="noteIndent">[NOTE: As allowed by the award rules for this year, a single nomination could honor work in one or more films.  Though the final awards ballot listed both <i>The Divorcee</i> and <i>Their Own Desire</i> in her nomination, the award was announced for only the <i>The Divorcee</i> performance.  It has never been established as to why this was, but it possibly could have been because the original report from the Acting Branch Board of Judges only listed <i>The Divorcee</i> performance in the results of the nominations voting, or it could have been because on some of the final ballots, the voters had indicated the <i>The Divorcee</i> performance over the other.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39069">Gloria Swanson</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34738">The Trespasser</A></I> {&quot;Marion Donnell&quot;} </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>ART DIRECTION</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1558&BSFromYear=3">ART DIRECTION</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34719">Bulldog Drummond</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39070">(William Cameron Menzies)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34728">King of Jazz</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39071">Herman Rosse</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34729">The Love Parade</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39072">(Hans Dreier)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34733">Sally</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39073">(Jack Okey)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34739">The Vagabond King</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39074">(Hans Dreier)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>BEST PICTURE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1602&BSFromYear=3">OUTSTANDING PRODUCTION</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34715">All Quiet on the Western Front</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39086">Universal</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34717">The Big House</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39087">Cosmopolitan</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34723">Disraeli</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39088">Warner Bros.</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34724">The Divorcee</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39089">Metro-Goldwyn-Mayer</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34729">The Love Parade</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39090">Paramount Famous Lasky</A> </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>CINEMATOGRAPHY</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1562&BSFromYear=3">CINEMATOGRAPHY</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34715">All Quiet on the Western Front</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39075">(Arthur Edeson)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34716">Anna Christie</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39076">(William Daniels)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34727">Hell's Angels</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39077">(Gaetano Gaudio), (Harry Perry)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34729">The Love Parade</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39078">(Victor Milner)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34740">With Byrd at the South Pole</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39079">Joseph T. Rucker, Willard Van Der Veer</A> </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>DIRECTING</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1571&BSFromYear=3">DIRECTING</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39080">Clarence Brown</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34716">Anna Christie</A></I>; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34732">Romance</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39082">Robert Leonard</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34724">The Divorcee</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39083">Ernst Lubitsch</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34729">The Love Parade</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39084">Lewis Milestone</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34715">All Quiet on the Western Front</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39085">King Vidor</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34726">Hallelujah</A></I> </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>SOUND</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1617&BSFromYear=3">SOUND RECORDING</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34717">The Big House</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39091">Metro-Goldwyn-Mayer Studio Sound Department, Douglas Shearer, Sound Director</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34720">The Case of Sergeant Grischa</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39092">(RKO Radio Studio Sound Department, John Tribby, Sound Director)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34729">The Love Parade</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39093">(Paramount Famous Lasky Studio Sound Department, Franklin Hansen, Sound Director)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34730">Raffles</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39094">(United Artists Studio Sound Department, Oscar Lagerstrom, Sound Director)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34735">Song of the Flame</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39095">(First National Studio Sound Department, George Groves, Sound Director)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>WRITING</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=3">1929/30 (3rd)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1627&BSFromYear=3">WRITING</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34715">All Quiet on the Western Front</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39096">(George Abbott), (Maxwell Anderson), (Del Andrews)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34717">The Big House</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39097">Frances Marion</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34723">Disraeli</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39098">(Julian Josephson)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34724">The Divorcee</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39099">(John Meehan)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34736">Street of Chance</A></I>  -- <A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39100">(Howard Estabrook)</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For the third Academy Awards no certificates of nomination were given out in this category, only the titles of the nominated films and their companies were listed.  When the winners were revealed, only the names of the individuals involved with the winning achievements were announced.  The name(s) of those credited with this achievement are indicated here in parens.]</DIV>
+</TD></TR>
+</table>
+</dl>
+
+
+
+
+          <!--END AREA TO PLACE BODY CONTENT-->
+		         
+             <!--moved end main much higher up-->
+
+<!--moved all the footer code to the includes file below, zf, 1/29/2010-->
+<!--This includes file contains the footer.-->
+<!--NEW Updated code. --> 
+</div><!-- end main -->
+</div><!-- end content -->
+<!--<div id="footer"> -->
+  <footer>
+    <ul class="footer-menu">
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/about">ABOUT</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/contact">CONTACT</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/legal">LEGAL</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/sitemap">SITE MAP</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/careers">CAREERS</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/press">PRESS</a> </li>
+    </ul>
+    <div class="copyright">  &#169;<script type="text/javascript">document.write(new Date().getFullYear());</script> 
+						Academy of Motion Picture Arts and Sciences </div>
+  </footer>
+ <!--</div>--><!-- end footer -->
+ </div><!-- end wrapperInner -->
+ </div><!-- end wrapperOuter -->
+  <div class="clear"></div>
+
+<script src="http://www1.oscars.org/vendor/old/scripts/jquery.ba-dotimeout.min.js"></script>
+<!-- this script is required for the site nav to work -->
+<script src="http://www1.oscars.org/vendor/old/scripts/header.js"></script>
+<script type="text/javascript" src="http://www1.oscars.org/vendor/old/scripts/ga.js"></script>
+
+
+</body>
+</html>

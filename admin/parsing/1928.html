@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Begin old code -->
+
+
+
+<!-- End old code -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--<title>Academy Awards Database Academy | Academy of Motion Picture Arts &amp; Sciences</title>-->
+<!--Begin old code -->
+    <title>
+        Results Page - Academy Awards&reg; Database - AMPAS
+
+    </title>
+<!-- end old code -->
+
+
+<!-- Begin old code -->
+<!--DisplayNavBar.jsp-->
+<script type="text/javascript">
+<!-- Comment to prevent JavaScript from being displayed in old browsers.
+function goChangeDisplay() {
+    if (document.changeDisplay.displayType.options[document.changeDisplay.displayType.selectedIndex].value != 0) {
+        document.changeDisplay.submit();
+    }
+}
+
+function printDisplay() {
+    window.print();
+}
+
+function printableResultsWindow() {
+    window.open("DisplayPrintableResults.jsp","printableResults","dependent=yes,width=700,height=500,screenX=10,screenY=10,left=10,top=10,menubar=no,resizable=yes,status=no,toolbar=no,scrollbars=yes");
+}
+
+function showHelp() {
+    window.open("help/helpMain.jsp", "help", "dependent=yes,width=700,height=500,screenX=10,screenY=10,left=10,top=10,menubar=no,resizable=yes,status=no,toolbar=no,scrollbars=yes");
+}
+function showStats(helpPage) {
+    if (helpPage == null) {
+	    helpPage="menu.jsp"
+		}
+		    window.open("help/helpMain.jsp?helpContentURL=" + helpPage, "help", "dependent=yes,width=700,height=500,screenX=10,screenY=10,left=10,top=10,menubar=no,resizable=yes,status=no,toolbar=no,scrollbars=yes");
+		    }
+
+function goNewSearch() {
+    document.newSearch.submit();
+}
+
+function goModifySearch() {
+    document.modifySearch.submit();
+}
+-->
+</script>
+<!--EndDisplayNavBar.jsp-->
+<!-- End old code -->
+<!-- END -->
+<!--meta tags and oscars.org style sheets and java scripts-->
+<!--This includes file should appear just before the link to the cascading style sheet.-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Copyright (C) 2014 Academy of Motion Picture Arts and Sciences" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<link rel="icon" type="image/png" href="http://www1.oscars.org/favicon.png" />
+<link href='fonts/Prestige_Elite_Univers_Futura_PT_HoeflerText4r.css' rel='stylesheet' type='text/css'/>
+         <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsMain-20141001.css";</style> 
+	     <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsInner-20141001.css";</style>
+<!--		 <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsMainNew-20141001.css";</style> -->
+		 <style type="text/css" media="screen,print">@import "http://www1.oscars.org/vendor/old/css/oscarsMainNew-20141001-awardsdb.css";</style> 
+		 <style type="text/css" media="print">@import "http://www1.oscars.org/vendor/old/css/oscarsPrint-20141001.css";</style>
+		 <script type="text/javascript" src="http://www1.oscars.org/vendor/old/scripts/1.7.1/jquery.min.js"></script>
+		 <script type="text/javascript" src="http://www1.oscars.org/vendor/old/scripts/oscars-20141001.js"></script>
+		 <script type="text/javascript">
+			var arrOpenLIElements = ['#li_1','#li_1_1'];
+			var strActiveLIElement = '#li_1_1';
+		</script>
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://www.oscars.org/vendor/css/oscars_ie6-081112.css" />    
+<![endif]-->
+
+<!--FLASH-->
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="http://www.oscars.org/vendor/scripts/AC_RunActiveContent.js" language="javascript"></script>
+
+<script type="text/javascript" language="javascript">
+function showNoms() {
+	window.open('http://www.oscars.org/awards/academyawards/82/nominees.html','noms','left=20,top=20,width=1100,height=700,toolbar=0,resizable=1,scrollbars=1');
+}
+</script>
+<!-- Universal Analytics 8/18/2014 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47510736-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="awards_display.css"/><!--made this the last style sheet, zf, 1/6/2010-->
+</head>
+<body>
+<!--This includes file comes right after the HeaderTop.html file and the link to the cascading style sheet.-->
+
+<div id="wrapperOuter">
+  <div id="wrapperInner">
+    <div id="header">
+        <header>
+        	<div class="site-header">
+              <div class="logo">
+                <a href="http://www.oscars.org/" style="left: 0px;">
+                  <img border="0" src="http://www1.oscars.org/vendor/old/images/logo.png" />
+                </a>
+              </div>
+              <div class="site-login">
+                <a href="https://www.members.oscars.org/">MEMBERS LOGIN</a>
+              </div>
+              <div class="site-search">
+                <!--<input type="text" value="" name="" id="">
+                <input type="image" src="images/icon-search.png" name="" id="">-->
+                
+                
+                <form accept-charset="UTF-8" id="search-block-form" method="post" action="http://www.oscars.org/search/site/" class="search-form" target="_self">
+                 <input type="text" maxlength="128" size="10" value="" name="search_block_form" id="edit-search-block-form--2" placeholder="" class="apachesolr-autocomplete unprocessed custom-search-box form-text form-autocomplete" title="" autocomplete="off" />
+                <input type="image" src="http://www1.oscars.org/vendor/old/images/icon-search.png" name="op" id="edit-submit" class="custom-search-button form-submit" alt="Search" />
+                <input type="hidden" value="form-s89VspXM23MBdbchNJTyFDcNTLLiZo-ocEyCWQtYero" name="form_build_id" />
+                <input type="hidden" value="search_block_form" name="form_id" />
+              </form>
+              
+                
+              </div>
+            </div>
+    
+            <div class="site-nav-wrapper">
+                <nav class="site-nav js-site-nav">
+                    <ul>
+                        <li class="site-nav-item js-site-nav-item" data-section="awards">Awards</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="museum">Museum</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="events">Events</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="explore">Explore</li>
+                        <li class="site-nav-item js-site-nav-item" data-section="learn">Learn</li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="site-sub-nav-wrapper js-site-sub-nav-wrapper">
+                <nav class="site-sub-nav js-site-sub-nav">
+                    <ul data-section="awards">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/oscars">Oscars</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/governors">Governors Awards</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/sci-tech">Sci-Tech Awards</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/saa">Student Academy Awards</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/nicholl">Academy Nicholl Fellowships</a></li>
+                    </ul>
+    
+                    <ul data-section="museum">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/academy-museum">About the Museum</a></li>
+                    </ul>
+    
+                    <ul data-section="events">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/events">Calendar</a></li>
+						<li class="site-nav-sub-item"><a href="http://www.oscars.org/hollywoodcostume/">Hollywood Costume</a></li>
+                    </ul>
+    
+                    <ul data-section="explore">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/academy-collection">Collection Highlights</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/academy-story">Academy Story</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/news">News</a></li>
+                       <!-- <li class="site-nav-sub-item"><a href="http://www.oscars.org/member-voices">Member Voices</a></li>-->
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/videos-photos">Videos &amp; Photos</a></li>
+                        
+                    </ul>
+    
+                    <ul data-section="learn">
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/film-archive">Academy Film Archive</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/library">Margaret Herrick Library</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/oral-history">Oral History</a></li>
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/science-technology">Science &amp; Technology</a></li>                       
+                        <li class="site-nav-sub-item"><a href="http://www.oscars.org/educational-programs">Educational Programs</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+        </header>
+    </div>
+
+   <div id="content">
+    <div id="main">
+		
+	<!--moved breadcrumbs above buttons, zf, 12/17/2009-->	
+		<p class="breadcrumb"> 
+		<a href="http://www.oscars.org/">Home</a> /
+		<a href="http://www.oscars.org/oscars">Oscars</a> / 
+		<a href="http://www.oscars.org/oscars/awards-databases/">Awards Databases </a> / Academy Awards Database</p>
+		<br style="clear:both">
+  <!--START AREA TO PLACE BODY CONTENT-->
+
+<!-- DisplayNavBar.jsp -->
+
+
+<!--START SUBHEADER -->
+
+
+                <form name="changeDisplay" action="BasicSearch" method="POST" target="_parent">
+
+<div id="buttonrow">
+<ul>
+<li>
+                   <a href="BasicSearch?action=newSearch" target="_parent" >New Search</a>
+</li>
+<li>
+                   <a href="BasicSearch?action=showSearchPage" target="_parent">Modify Search</a>
+</li>
+<li >
+                   <a href="javascript:showStats('statistics/indexStats.html')">Statistics</a> 
+</li>
+<li>
+				   <a href="#" onClick="window.open('http://aaspeechesdb.oscars.org','','menubar=yes, scrollbars=yes, resizable=yes, width=1000, height=700');" >Speeches</a><!--added link, zf 11/12/2013-->
+</li>
+<li>
+                   <a href="javascript:printableResultsWindow()()">Print</a>
+</li>
+<li>
+                   <a href="javascript:showHelp()" >Help</a>
+</li>
+<li class="last">
+                    
+                        
+                    <select name="displayType" size="1" class="jumpmenu" id="db_jump" onChange="goChangeDisplay()">
+                                <option value="0">&lt;Change View&gt;</option>
+                                <option value="1">Category (chron)</option>
+                                <option value="8">Category (alpha)</option>
+                                <option value="3">Film (alpha)</option>
+                                <option value="4">Film (chron)</option>
+                                <option value="6">Nominee (alpha)</option>
+                                <option value="7">Nominee (chron)</option>
+                                <option value="9"></option><!--changed option value from 0 to 9-->
+                                <option value="2">Distributor</option>
+                                <option value="5">Director (credited)</option>
+                                <option value="9"> -------------------------------------------</option><!--changed option value from 0 to 9-->
+                            </select>
+                            <input type="HIDDEN" name="action" value="searchLink">
+<input type="HIDDEN" name="BSFilmTitle" value="">
+<input type="HIDDEN" name="BSWinner" value="">
+<input type="HIDDEN" name="BSFromYear" value="1">
+<input type="HIDDEN" name="BSToYear" value="0">
+<input type="HIDDEN" name="BSNominee" value="">
+<input type="HIDDEN" name="BSSongTitle" value="">
+<input type="HIDDEN" name="BSCategoryExact" value="0">
+<input type="HIDDEN" name="BSFilmID" value="0">
+<input type="HIDDEN" name="BSNominationID" value="0">
+<input type="HIDDEN" name="BSNomineeID" value="0">
+<input type="HIDDEN" name="BSSort" value="">
+<input type="HIDDEN" name="ASWinnerOnlyInd" value="">
+<input type="HIDDEN" name="ASYearStart" value="0">
+<input type="HIDDEN" name="ASYearEnd" value="0">
+<input type="HIDDEN" name="ASFeatureFilmOnlyInd" value="">
+<input type="HIDDEN" name="ASShortFilmOnlyInd" value="">
+<input type="HIDDEN" name="ASForeignFilmOnlyInd" value="">
+<input type="HIDDEN" name="ASMaleOnlyInd" value="">
+<input type="HIDDEN" name="ASFemaleOnlyInd" value="">
+<input type="HIDDEN" name="ASDebutOnlyInd" value="">
+<input type="HIDDEN" name="ASPosthumousOnlyInd" value="">
+
+
+					</li>
+					</ul>
+</div><!--end div buttonrow-->
+            </form>
+        <!--END SUBHEADER -->
+
+
+<br clear=all>
+
+<!-- End DisplayNavBar.jsp -->    
+        </div><!--end main-->
+        <div id="aadb">		
+          
+<BR><p> Results displayed by award category; sort is alphabetical<BR>Win indicated by an asterisk (*)</p><BR>
+<dl>
+<dt>
+<b>ACTING (OTHER)</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1650&BSFromYear=1">SPECIAL AWARD</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39046">To Charles Chaplin, for acting, writing, directing and producing <i>The Circus</i>.</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: "The Academy Board of Judges on merit awards for individual achievements in motion picture arts during the year ending August 1, 1928, unanimously decided that your name should be removed from the competitive classes, and that a special first award be conferred upon you for writing, acting, directing and producing <i>The Circus</i>.  The collective accomplishments thus displayed place you in a class by yourself."  (Letter from the Academy to Mr. Chaplin, dated February 19, 1929.)]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>ACTOR -- LEADING ROLE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1552&BSFromYear=1">ACTOR</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39006">Richard Barthelmess</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34693">The Noose</A></I> {&quot;Nickie Elkins&quot;}; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34694">The Patent Leather Kid</A></I> {&quot;The Patent Leather Kid&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39008">Emil Jannings</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34691">The Last Command</A></I> {&quot;General Dolgorucki [Grand Duke Sergius Alexander]&quot;}; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34707">The Way of All Flesh</A></I> {&quot;August Schilling&quot;} </DIV>
+</TD></TR>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1650&BSFromYear=1">SPECIAL AWARD</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39046">To Charles Chaplin, for acting, writing, directing and producing <i>The Circus</i>.</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: "The Academy Board of Judges on merit awards for individual achievements in motion picture arts during the year ending August 1, 1928, unanimously decided that your name should be removed from the competitive classes, and that a special first award be conferred upon you for writing, acting, directing and producing <i>The Circus</i>.  The collective accomplishments thus displayed place you in a class by yourself."  (Letter from the Academy to Mr. Chaplin, dated February 19, 1929.)]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>ACTRESS -- LEADING ROLE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1555&BSFromYear=1">ACTRESS</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39010">Louise Dresser</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34699">A Ship Comes In</A></I> {&quot;Mrs. Pleznik&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39011">Janet Gaynor</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34698">7th Heaven</A> </I>{&quot;Diane&quot;}; <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34702">Street Angel</A></I> {&quot;Angela&quot;}; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34703">Sunrise</A></I> {&quot;The Wife&quot;} </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39014">Gloria Swanson</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34697">Sadie Thompson</A></I> {&quot;Sadie Thompson&quot;} </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>ART DIRECTION</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1558&BSFromYear=1">ART DIRECTION</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39015">Rochus Gliese</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34703">Sunrise</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39016">William Cameron Menzies</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34688">The Dove</A></I>; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34704">Tempest</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39018">Harry Oliver</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34698">7th Heaven</A></I> </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>BEST PICTURE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1601&BSFromYear=1">OUTSTANDING PICTURE</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39031">The Caddo Company</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34696">The Racket</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39032">Fox</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34698">7th Heaven</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39033">Paramount Famous Lasky</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34708">Wings</A></I> </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>CINEMATOGRAPHY</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1562&BSFromYear=1">CINEMATOGRAPHY</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39019">George Barnes</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34687">The Devil Dancer</A></I>; <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34692">The Magic Flame</A></I>; and <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34697">Sadie Thompson</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39022">Charles Rosher</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34703">Sunrise</A></I> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For this awards year, awards were presented in the name of the individual and could honor work on one or more films.  Charles Rosher and Karl Struss were both honored for cinematography on this film.  It is considered a single nomination for the film.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39023">Karl Struss</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34703">Sunrise</A></I> </DIV>
+<DIV CLASS="noteIndent">[NOTE: For this awards year, awards were presented in the name of the individual and could honor work on one or more films.  Charles Rosher and Karl Struss were both honored for cinematography on this film.  It is considered a single nomination for the film.]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>DIRECTING</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1569&BSFromYear=1">DIRECTING (Comedy Picture)</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39024">Lewis Milestone</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34705">Two Arabian Knights</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39025">Ted Wilde</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34701">Speedy</A></I> </DIV>
+</TD></TR>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1570&BSFromYear=1">DIRECTING (Dramatic Picture)</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39026">Frank Borzage</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34698">7th Heaven</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39027">Herbert Brenon</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34700">Sorrell and Son</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39028">King Vidor</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34686">The Crowd</A></I> </DIV>
+</TD></TR>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1650&BSFromYear=1">SPECIAL AWARD</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39046">To Charles Chaplin, for acting, writing, directing and producing <i>The Circus</i>.</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: "The Academy Board of Judges on merit awards for individual achievements in motion picture arts during the year ending August 1, 1928, unanimously decided that your name should be removed from the competitive classes, and that a special first award be conferred upon you for writing, acting, directing and producing <i>The Circus</i>.  The collective accomplishments thus displayed place you in a class by yourself."  (Letter from the Academy to Mr. Chaplin, dated February 19, 1929.)]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>ENGINEERING EFFECTS</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1575&BSFromYear=1">ENGINEERING EFFECTS</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39029">Ralph Hammeras</A></DIV>
+<DIV CLASS="noteIndent">[NOTE: This nomination was not associated with any specific film title.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39047">Roy Pomeroy</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34708">Wings</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39030">Nugent Slaughter</A></DIV>
+<DIV CLASS="noteIndent">[NOTE: Though no specific titles were indicated during the presentation on May 16, 1929, or in the official results from the Central Board of Judges for this honorable mention, Academy records indicate that Mr. Slaughter was most often mentioned in connection with <i>The Jazz Singer</i>.]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>HONORARY AWARD</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1650&BSFromYear=1">SPECIAL AWARD</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39045">To Warner Bros., for producing <i>The Jazz Singer</i>, the pioneer outstanding talking picture, which has revolutionized the industry.</A> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39046">To Charles Chaplin, for acting, writing, directing and producing <i>The Circus</i>.</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: "The Academy Board of Judges on merit awards for individual achievements in motion picture arts during the year ending August 1, 1928, unanimously decided that your name should be removed from the competitive classes, and that a special first award be conferred upon you for writing, acting, directing and producing <i>The Circus</i>.  The collective accomplishments thus displayed place you in a class by yourself."  (Letter from the Academy to Mr. Chaplin, dated February 19, 1929.)]</DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>UNIQUE AND ARTISTIC PICTURE</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1623&BSFromYear=1">UNIQUE AND ARTISTIC PICTURE</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39034">Fox</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34703">Sunrise</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39035">Metro-Goldwyn-Mayer</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34686">The Crowd</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39036">Paramount Famous Lasky</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34684">Chang</A></I> </DIV>
+</TD></TR>
+</TABLE>
+</DD>
+</DL>
+<dl>
+<dt>
+<b>WRITING</b>
+</dt>
+<dt>
+<A CLASS="awardYearHeader" TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSFromYear=1">1927/28 (1st)</A></dt>
+<table class="noteIndent" cols="2" width="95%" border=0>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1628&BSFromYear=1">WRITING (Adaptation)</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39038">Alfred Cohn</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34690">The Jazz Singer</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39037">Anthony Coldeway</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34689">Glorious Betsy</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39039">Benjamin Glazer</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34698">7th Heaven</A></I> </DIV>
+</TD></TR>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1632&BSFromYear=1">WRITING (Original Story)</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39040">Lajos Biro</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34691">The Last Command</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39041">Ben Hecht</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34706">Underworld</A></I> </DIV>
+</TD></TR>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1646&BSFromYear=1">WRITING (Title Writing)</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39042">Gerald Duffy</A> -- <I><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=3&BSFilmID=34695">The Private Life of Helen of Troy</A></I> </DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39043">Joseph Farnham</A></DIV>
+<DIV CLASS="noteIndent">[NOTE: This award was not associated with any specific film title.]</DIV>
+</TD></TR>
+<tr valign="TOP">
+<td align="RIGHT" width="30"></td><td><DIV CLASS="nomHangIndent"><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39044">George Marion, Jr.</A></DIV>
+<DIV CLASS="noteIndent">[NOTE: This nomination was not associated with any specific film title.]</DIV>
+</TD></TR>
+<tr>
+<td colspan="2" valign="TOP">
+<A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=1&BSCategoryExact=1650&BSFromYear=1">SPECIAL AWARD</A></td>
+</tr>
+<tr valign="TOP">
+<td align="RIGHT" width="30">*</td><td><DIV><A TARGET="_top" HREF="BasicSearch?action=searchLink&displayType=6&BSNominationID=39046">To Charles Chaplin, for acting, writing, directing and producing <i>The Circus</i>.</A> </DIV>
+<DIV CLASS="noteIndent">[NOTE: "The Academy Board of Judges on merit awards for individual achievements in motion picture arts during the year ending August 1, 1928, unanimously decided that your name should be removed from the competitive classes, and that a special first award be conferred upon you for writing, acting, directing and producing <i>The Circus</i>.  The collective accomplishments thus displayed place you in a class by yourself."  (Letter from the Academy to Mr. Chaplin, dated February 19, 1929.)]</DIV>
+</TD></TR>
+</table>
+</dl>
+
+
+
+
+          <!--END AREA TO PLACE BODY CONTENT-->
+		         
+             <!--moved end main much higher up-->
+
+<!--moved all the footer code to the includes file below, zf, 1/29/2010-->
+<!--This includes file contains the footer.-->
+<!--NEW Updated code. --> 
+</div><!-- end main -->
+</div><!-- end content -->
+<!--<div id="footer"> -->
+  <footer>
+    <ul class="footer-menu">
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/about">ABOUT</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/contact">CONTACT</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/legal">LEGAL</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/sitemap">SITE MAP</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/careers">CAREERS</a> </li>
+        <li class="footer-menu-item"> <a href="http://www.oscars.org/press">PRESS</a> </li>
+    </ul>
+    <div class="copyright">  &#169;<script type="text/javascript">document.write(new Date().getFullYear());</script> 
+						Academy of Motion Picture Arts and Sciences </div>
+  </footer>
+ <!--</div>--><!-- end footer -->
+ </div><!-- end wrapperInner -->
+ </div><!-- end wrapperOuter -->
+  <div class="clear"></div>
+
+<script src="http://www1.oscars.org/vendor/old/scripts/jquery.ba-dotimeout.min.js"></script>
+<!-- this script is required for the site nav to work -->
+<script src="http://www1.oscars.org/vendor/old/scripts/header.js"></script>
+<script type="text/javascript" src="http://www1.oscars.org/vendor/old/scripts/ga.js"></script>
+
+
+</body>
+</html>
