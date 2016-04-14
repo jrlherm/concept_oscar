@@ -10,5 +10,15 @@
         <div class="scroll">scroll</div>
         <div class="vertical-line"></div>
     </div>
-    <div style="height: 1000px; background-color: #0C0C0C;"></div>
+    <div class="ceremony-winners">
+        <div class="rectangle">
+            <h2>the winners of the ceremony</h2>
+            <h3>choose a winner</h3>
+        </div>
+
+        <div class="display-results">
+            <div class="category-results">best actor</div>
+            <div class="name-results">Léonardo Di Caprio - The Revenant</div>
+        </div>
+    </div>
 </div>

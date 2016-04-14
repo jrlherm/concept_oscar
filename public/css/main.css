@@ -513,6 +513,69 @@ footer li:hover:before {
     cursor: pointer;
 }
 
+#date .ceremony-winners {
+    height: 100vh;
+    background-color: #0C0C0C;
+}
+
+#date .rectangle {
+    width: 755px;
+    height: 555px;
+    border: solid 2.7px #c5a54e;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#date .ceremony-winners .rectangle h2 {
+    color: #C5A54E;
+    font-family:'BebasNeueBook';
+    font-weight:400;
+    font-size: 30px;
+    font-style:normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    position: relative;
+    top: 45%;
+}
+#date .ceremony-winners .rectangle h3 {
+    font-family: 'LibreBodoniRegular';
+    font-weight: 50;
+    font-size: 35px;
+    font-style:normal;
+    text-align: center;
+    letter-spacing: 4.5px;
+    position: relative;
+    top: 45%;
+}
+
+#date .display-results {
+    position: relative;
+    top: 23.5%;
+    padding-left: 23.5%;
+    text-transform: uppercase;
+    color: white;
+}
+
+#date .display-results .category-results {
+    font-family: 'LibreBodoniRegular';
+    font-weight: 50;
+    font-size: 20px;
+    font-style:normal;
+    letter-spacing: 4.5px;
+    color: #c5a54e;
+    position: relative;
+}
+
+#date .display-results .name-results {
+    font-family:'BebasNeueBook';
+    font-weight:400;
+    font-size: 18px;
+    font-style:normal;
+    letter-spacing: 3.8px;
+}
 
 #global {
     height: 100vh;
