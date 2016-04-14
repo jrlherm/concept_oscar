@@ -40,4 +40,17 @@ class dbRepository
 
         return json_decode($result);
     }
+
+//    public function initbase(){
+//
+//        for($i = 87;$i > 0; $i--){
+//            $annee = 2014 - (87 - $i);
+//            $sql = 'INSERT INTO `oscar`(`year`, `edition`) VALUES (:theyear, :edition)';
+//            $stmt = $this->pdo->prepare($sql);
+//            $stmt->bindValue(':theyear', $annee);
+//            $stmt->bindValue(':edition', $i);
+//            $stmt->execute();
+//        }
+//
+//    }
 }
