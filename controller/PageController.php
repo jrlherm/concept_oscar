@@ -42,13 +42,13 @@ class PageController
     {
         /* Model access */
 
+
         /* Views */
 
-        include APP_VIEW_DIR."partial/header.php";
-        include APP_VIEW_DIR."page/home.php";
-        include APP_VIEW_DIR."partial/footer.php";
+        require APP_VIEW_DIR."partial/header.php";
+        require APP_VIEW_DIR."page/home.php";
+        require APP_VIEW_DIR."partial/footer.php";
     }
-
 
     /**
      * Date controller
@@ -61,6 +61,21 @@ class PageController
 
         include APP_VIEW_DIR."partial/header.php";
         include APP_VIEW_DIR."page/date.php";
+        include APP_VIEW_DIR."partial/footer.php";
+    }
+
+
+    /**
+     * Date controller
+     */
+    public function globalAction()
+    {
+        /* Model access */
+
+        /* Views */
+
+        include APP_VIEW_DIR."partial/header.php";
+        include APP_VIEW_DIR."page/global.php";
         include APP_VIEW_DIR."partial/footer.php";
     }
 

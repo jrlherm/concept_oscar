@@ -240,7 +240,7 @@ footer {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 25%;
+    width: 100%;
 }
 
 footer ul {
@@ -386,34 +386,122 @@ footer li:hover:before {
     height: 400px;
     background-color: red;
 }
+
+
 /*------------------------------------*\
-    TEST
+    DATE
 \*------------------------------------*/
 
-.circle {
+#date {
+    height: 100vh;
+    position: relative;
+}
+
+#date .background {
+    width: 100%;
+    height: 100%;
+    background: url("../img/date-header.jpg") center center;
+    background-size: cover;
+}
+
+#date .header {
+    display: block;
+    width: 250px;
+    height: 145px;
+    border: solid 6px #c5a54e;
+    font-family:'BebasNeue';
+    font-weight:700;
+    font-size: 60px;
+    font-style:normal;
+    letter-spacing: 10px;
+    line-height: 145px;
+    color: #c5a54e;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
-    display: block;
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, rgba(5, 5, 5, 0.3), transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(90deg, rgba(5, 5, 5, 0.3), transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, rgba(5, 5, 5, 0.3), transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(90deg, rgba(5, 5, 5, 0.3), transparent); /* Standard syntax */
-    animation: rotate 20s linear infinite;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes rotate {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
+#date .image-container {
+    width: 160px;
+    height: 110px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 130px) ;
+}
 
-    50% {
-        transform: translate(-50%, -50%) rotate(180deg);
-    }
+#date .image-left {
+    left: 1.5%;
+}
 
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
+#date .image-right {
+    right: 1.5%;
+}
+
+#date .line-left {
+    width: calc(50% - 125px);
+    height:1px;
+    background:#c5a54e;
+    position: absolute;
+    top: 50%;
+
+}
+
+#date .previous-year {
+    font-family:'BebasNeue';
+    font-weight:400;
+    font-size: 25px;
+    font-style:normal;
+    letter-spacing: 4px;
+    color: #c5a54e;
+    position: absolute;
+    top: 52%;
+    left: 2%;
+}
+
+
+#date .line-right {
+    width: calc(50% - 125px);
+    height:1px;
+    background:#c5a54e;
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+}
+
+#date .next-year {
+    font-family:'BebasNeue';
+    font-weight:400;
+    font-size: 25px;
+    font-style:normal;
+    letter-spacing: 4px;
+    color: #605c52;
+    position: absolute;
+    top: 52%;
+    right: 2%;
+
+}
+
+#date .vertical-line {
+    width: 1px;
+    height:calc(30% - 125px);
+    background:#c5a54e;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
+
+#date .scroll {
+    font-family:'Lato';
+    font-weight:100;
+    font-size: 15px;
+    font-style:normal;
+    color: #c5a54e;
+    position: absolute;
+    bottom: calc(30% - 125px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
