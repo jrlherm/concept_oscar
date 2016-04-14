@@ -17,6 +17,6 @@ scrollToCustom = function(y, progress) {
 
 $('.scroll').on('click', function(){
     console.log($('#date').offsetHeight);
-    scrollToCustom(895,document.documentElement.scrollTop || document.body.scrollTop);
+    scrollToCustom(850,document.documentElement.scrollTop || document.body.scrollTop);
 });
 
