@@ -42,6 +42,7 @@ class PageController
     {
         /* Model access */
 
+        $ceremony = $this->request->getCeremony();
 
         /* Views */
 
@@ -55,7 +56,13 @@ class PageController
      */
     public function dateAction()
     {
+        /* Get information */
+
+        $current_year = trim($_GET['year']);
+
         /* Model access */
+
+        $result = $this->request->getAllOnDate($current_year);
 
         /* Views */
 
@@ -76,6 +83,20 @@ class PageController
 
         include APP_VIEW_DIR."partial/header.php";
         include APP_VIEW_DIR."page/global.php";
+        include APP_VIEW_DIR."partial/footer.php";
+    }
+
+    /**
+     * Credits controller
+     */
+    public function creditsAction()
+    {
+        /* Model access */
+
+        /* Views */
+
+        include APP_VIEW_DIR."partial/header.php";
+        include APP_VIEW_DIR."page/credits.php";
         include APP_VIEW_DIR."partial/footer.php";
     }
 
