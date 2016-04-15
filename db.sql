@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:8889
--- Généré le :  Jeu 14 Avril 2016 à 12:51
+-- Généré le :  Ven 15 Avril 2016 à 11:10
 -- Version du serveur :  5.5.38
 -- Version de PHP :  5.6.2
 
@@ -2301,7 +2301,7 @@ CREATE TABLE `directing` (
   `id_api_director` int(11) NOT NULL,
   `id_api_movie` int(11) NOT NULL,
   `winner` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=494 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=495 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `directing`
@@ -2725,7 +2725,8 @@ INSERT INTO `directing` (`id`, `year`, `id_api_director`, `id_api_movie`, `winne
 (490, 1930, 2000, 51759, 1),
 (491, 1930, 29962, 143, 0),
 (492, 1929, 1056119, 47147, 0),
-(493, 1929, 2428, 171446, 0);
+(493, 1929, 2428, 171446, 0),
+(494, 2007, 1223, 6977, 1);
 
 -- --------------------------------------------------------
 
@@ -2739,7 +2740,96 @@ CREATE TABLE `graph1` (
   `name_movie` varchar(100) NOT NULL,
   `budget_movie` int(11) NOT NULL,
   `category_movie` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `graph1`
+--
+
+INSERT INTO `graph1` (`id`, `year`, `name_movie`, `budget_movie`, `category_movie`) VALUES
+(1, 2015, 'Spotlight', 20000000, 'Drama;History;Thriller'),
+(2, 2014, 'Birdman', 18000000, 'Drama;Comedy;'),
+(3, 2013, '12 Years a Slave', 20000000, 'Drama;History;'),
+(4, 2012, 'Argo', 44500000, 'Drama;Thriller;'),
+(5, 2011, 'The Artist', 15000000, 'Drama;Comedy;Romance'),
+(6, 2010, 'The King''s Speech', 15000000, 'Drama;History;'),
+(7, 2009, 'The Hurt Locker', 15000000, 'Drama;Thriller;War'),
+(8, 2008, 'Slumdog Millionaire', 15000000, 'Drama;Romance;'),
+(9, 2007, 'No Country for Old Men', 25000000, 'Crime;Drama;Thriller'),
+(10, 2006, 'The Departed', 90000000, 'Drama;Thriller;Crime'),
+(11, 2005, 'Crash', 6500000, 'Drama;;'),
+(12, 2004, 'Million Dollar Baby', 30000000, 'Drama;;'),
+(13, 2003, 'The Lord of the Rings: The Return of the King', 94000000, 'Adventure;Fantasy;Action'),
+(14, 2002, 'Chicago', 45000000, 'Action;Comedy;Crime'),
+(15, 2001, 'A Beautiful Mind', 60000000, 'Drama;Romance;'),
+(16, 2000, 'Gladiator', 103000000, 'Action;Drama;Adventure'),
+(17, 1999, 'American Beauty', 15000000, 'Drama;;'),
+(18, 1998, 'Shakespeare in Love', 25000000, 'History;;'),
+(19, 1997, 'Titanic', 200000000, 'Action;Drama;Romance'),
+(20, 1996, 'The English Patient', 27000000, 'Drama;Romance;War'),
+(21, 1995, 'Braveheart', 72000000, 'Action;Drama;History'),
+(22, 1994, 'Forrest Gump', 55000000, 'Comedy;Drama;Romance'),
+(23, 1993, 'Schindler''s List', 22000000, 'Drama;History;War'),
+(24, 1992, 'Unforgiven', 14000000, 'Western;;'),
+(25, 1991, 'The Silence of the Lambs', 19000000, 'Crime;Drama;Thriller'),
+(26, 1990, 'Dances with Wolves', 22000000, 'Adventure;Drama;Western'),
+(27, 1989, 'Driving Miss Daisy', 7500000, 'Comedy;Drama;'),
+(28, 1988, 'Rain Man', 25000000, 'Drama;;'),
+(29, 1987, 'The Last Emperor', 23000000, 'Drama;History;'),
+(30, 1986, 'Platoon', 6000000, 'Drama;War;Action'),
+(31, 1985, 'Out of Africa', 31000000, 'Drama;;'),
+(32, 1984, 'Amadeus', 18000000, 'Drama;History;Music'),
+(33, 1983, 'Terms of Endearment', 8000000, 'Drama;Comedy;'),
+(34, 1982, 'Gandhi', 22000000, 'Drama;History;'),
+(35, 1981, 'Chariots of Fire', 5500000, 'Drama;History;'),
+(36, 1980, 'Ordinary People', 6000000, 'Drama;;'),
+(37, 1979, 'Kramer vs. Kramer', 0, 'Drama;;'),
+(38, 1978, 'The Deer Hunter', 15000000, 'Drama;War;'),
+(39, 1977, 'Annie Hall', 4000000, 'Comedy;Drama;Romance'),
+(40, 1976, 'Rocky', 1100000, 'Drama;;'),
+(41, 1975, 'One Flew Over the Cuckoo''s Nest', 3000000, 'Drama;;'),
+(42, 1974, 'The Godfather: Part II', 13000000, 'Drama;Crime;'),
+(43, 1973, 'The Sting', 5500000, 'Comedy;Crime;Drama'),
+(44, 1972, 'The Godfather', 6000000, 'Drama;Crime;'),
+(45, 1971, 'The French Connection', 1800000, 'Action;Crime;Thriller'),
+(46, 1970, 'Patton', 12000000, 'Drama;History;War'),
+(47, 1969, 'Midnight Cowboy', 3600000, 'Drama;;'),
+(48, 1968, 'Oliver!', 10000000, 'Drama;Music;Family'),
+(49, 1967, 'In the Heat of the Night', 2000000, 'Crime;Drama;Mystery'),
+(50, 1966, 'A Man for All Seasons', 0, 'Drama;History;'),
+(51, 1965, 'The Sound of Music', 8200000, 'Drama;Family;Music'),
+(52, 1964, 'My Fair Lady', 17000000, 'Drama;Family;Music'),
+(53, 1963, 'Tom Jones', 1000000, 'Adventure;Comedy;History'),
+(54, 1962, 'Lawrence of Arabia', 15000000, 'Adventure;Drama;History'),
+(55, 1961, 'West Side Story', 6000000, 'Music;Crime;Drama'),
+(56, 1960, 'The Apartment', 3000000, 'Comedy;Drama;Romance'),
+(57, 1959, 'Ben-Hur', 15000000, 'Adventure;Drama;Action'),
+(58, 1958, 'Gigi', 0, 'Comedy;Music;Romance'),
+(59, 1957, 'The Bridge on the River Kwai', 3000000, 'Drama;History;War'),
+(60, 1956, 'Around the World in 80 Days', 110000000, 'Action;Adventure;Comedy'),
+(61, 1955, 'Marty', 343000, 'Drama;Romance;'),
+(62, 1954, 'On the Waterfront', 910000, 'Crime;Drama;'),
+(63, 1953, 'From Here to Eternity', 1650000, 'War;Drama;Romance'),
+(64, 1952, 'The Greatest Show on Earth', 0, 'Action;Drama;Romance'),
+(65, 1951, 'An American in Paris', 2723903, 'Drama;Comedy;Music'),
+(66, 1950, 'All About Eve', 1400000, 'Drama;;'),
+(67, 1949, 'All the King''s Men', 55000000, 'Drama;Thriller;'),
+(68, 1948, 'Hamlet', 750000, 'Drama;;'),
+(69, 1947, 'Gentleman''s Agreement', 20000000, 'Drama;Romance;'),
+(70, 1946, 'The Best Years of Our Lives', 2100000, 'Drama;History;Romance'),
+(71, 1945, 'The Lost Weekend', 1250000, 'Drama;;'),
+(72, 1944, 'Going My Way', 0, 'Drama;Comedy;Music'),
+(73, 1943, 'Casablanca', 950000, 'Drama;Romance;'),
+(74, 1939, 'Gone with the Wind', 4000000, 'Drama;Romance;War'),
+(75, 1938, 'You Can''t Take It with You', 1000000, 'Comedy;Romance;'),
+(76, 1937, 'The Life of Emile Zola', 0, 'Drama;;'),
+(77, 1936, 'The Great Ziegfeld', 0, 'Drama;Music;Romance'),
+(78, 1935, 'Mutiny on the Bounty', 0, 'Adventure;Drama;History'),
+(79, 1934, 'It Happened One Night', 325000, 'Comedy;Romance;'),
+(80, 1933, 'Cavalcade', 1180280, 'Drama;;'),
+(81, 1932, 'Grand Hotel', 0, ';;'),
+(82, 1931, 'Cimarron', 0, 'Drama;Action;Western'),
+(83, 1930, 'All Quiet on the Western Front', 1250000, 'Drama;War;');
 
 -- --------------------------------------------------------
 
@@ -2891,9 +2981,7 @@ INSERT INTO `oscar` (`id`, `year`, `edition`) VALUES
 (83, 1933, 6),
 (84, 1932, 5),
 (85, 1931, 4),
-(86, 1930, 3),
-(87, 1929, 2),
-(88, 1928, 1);
+(86, 1930, 3);
 
 --
 -- Index pour les tables exportées
@@ -2986,12 +3074,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=588;
 -- AUTO_INCREMENT pour la table `directing`
 --
 ALTER TABLE `directing`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=494;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=495;
 --
 -- AUTO_INCREMENT pour la table `graph1`
 --
 ALTER TABLE `graph1`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
 --
 -- AUTO_INCREMENT pour la table `graph2`
 --

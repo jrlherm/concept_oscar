@@ -138,8 +138,8 @@ select[multiple] {
 \*------------------------------------*/
 
 @font-face {
-    font-family:'Bauer';
-    src:url('../font/BauerBodRom');
+    font-family:'LibreBodoniRegular';
+    src:url('../font/Lora-Regular.ttf');
     font-weight:400;
     font-style:normal;
 }
@@ -165,6 +165,20 @@ select[multiple] {
     font-style:normal;
 }
 
+@font-face {
+    font-family:'Lato';
+    src:url('../font/Lato-Light.ttf');
+    font-weight:100;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Lato';
+    src:url('../font/Lato-Regular.ttf');
+    font-weight:400;
+    font-style:normal;
+}
+
 /*------------------------------------*\
     LOADER
 \*------------------------------------*/
@@ -173,7 +187,7 @@ select[multiple] {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background: url('../img/background.jpg') center center;
+    background: url('../img/loader-header.jpg') center center;
     background-size: cover;
 }
 
@@ -187,7 +201,7 @@ select[multiple] {
 }
 
 #loader h1, #loader h2 {
-    font-family: BebasNeue, sans-serif;
+    font-family: BebasNeue, serif;
     font-weight: 400;
     color: #c5a54e;
     font-size: 92px;
@@ -215,14 +229,13 @@ select[multiple] {
     z-index: -1;
 }
 
-
 #loader .arrow-hover {
     transform: rotate(90deg) translate(4px, -225px) !important;
     transition: linear 0.3s;
 }
 
 #loader .home {
-    font-family: BebasNeue, sans-serif;
+    font-family: BebasNeue, serif;
     font-weight: 400;
     color: #c4c4c4;
     font-size: 32px;
@@ -237,10 +250,11 @@ select[multiple] {
 \*------------------------------------*/
 
 footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     width: 100%;
+    z-index: 3;
 }
 
 footer ul {
@@ -272,7 +286,7 @@ footer li {
 }
 
 footer a {
-    font-family: BebasNeue, sans-serif;
+    font-family: BebasNeue, serif;
     font-weight: 400;
     color: #c4c4c4;
     font-size: 20px;
@@ -299,7 +313,7 @@ footer li:before {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    height: 4px;
+    height: 2px;
     margin-top: 7px;
 }
 
@@ -312,36 +326,42 @@ footer li:hover:before {
     HOME
 \*------------------------------------*/
 
-.home .intro {
+#home {
+    background-color: #0c0c0c;
+    padding-bottom: 120px;
+}
+
+#home .intro {
     height: 100vh;
     width: 100%;
     background: url('../img/background-home.jpg') center center;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+    z-index:1;
 }
 
-.home .presentation {
+#home .presentation {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
+    width: 70%;
     font-size: 0;
 }
 
-.home .presentation h2 {
-    font-family: BebasNeue, sans-serif;
+#home .presentation h2 {
+    font-family: BebasNeue, serif;
     font-weight: 400;
     color: #c5a54e;
-    font-size: 92px;
+    font-size: 72px;
     letter-spacing: 11px;
 }
 
-.home .loader {
+#home .loader {
     display: inline-block;
     height: 10px;
-    width: 300px;
+    width: 25%;
     background: -webkit-linear-gradient(90deg, #c5a54e, transparent); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(90deg, #c5a54e, transparent); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(90deg, #c5a54e, transparent); /* For Firefox 3.6 to 15 */
@@ -350,58 +370,458 @@ footer li:hover:before {
     margin-bottom: 20px;
 }
 
-.home .presentation p {
+#home .presentation p {
     color: #c4c4c4;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Lato', serif;
+    font-weight: 100;
     line-height: 25px;
 }
 
-.home .date {
-    background-color: #0c0c0c;
-    text-align: center;
+.intro .scroll {
+    width:100%;
+    text-align:center;
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding-top: 70vh;
+    color: #c5a54e;
+    letter-spacing: 2px;
 }
 
-.home .date h1{
-    font-family: BebasNeue, sans-serif;
+.intro .line {
+    height:40vh;
+    z-index:2;
+    width:2px;
+    margin:auto;
+    margin-top:1%;
+    background-color: #c5a54e;
+}
+
+.intro .round {
+    border-radius:10px;
+    background-color: #c5a54e;
+    width:1%;
+    height:2%;
+    margin:auto;
+}
+
+.item {
+    background-color: #C5A54E;
+    height: 145px;
+    width: 3px;
+    font-size: 0;
+    margin: auto;
+}
+
+.owl-carousel {
+    width: 500px !important;
+    margin: auto;
+}
+
+.owl-carousel.owl-loaded {
+    top: -75px;
+}
+
+.effect {
+    position: absolute;
+    background: url('../img/effect.png') no-repeat;
+    width: 215px;
+    height: 150px;
+}
+
+.effect-left {
+    left: calc(50% - 165px);
+    transform: translate(-50%, -49%);
+    z-index: 3;
+}
+
+.effect-right {
+    right: calc(50% - 165px);
+    transform: translate(50%, -49%) rotate(180deg);
+    z-index: 3;
+}
+
+/****** RETROSPECTIVE PART ******/
+
+#home .retrospective {
+    width:75%;
+    background: url('../img/oscars-2016-2.png') center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-top: 90px;
+    margin-left:12.5%;
+    height: 75vh;
+    position: relative;
+}
+
+.retrospective h1 {
+    font-family: "BebasNeue", serif;
+    font-weight: 900;
+    color: #FCC63A;
+    text-align:center;
+    opacity: 0.25;
+    letter-spacing: 10px;
+    font-size: 200px;
+    z-index:1;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 200px;
+}
+
+.retrospective h2 {
+    font-family: 'LibreBodoniRegular', serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.55;
+    text-align:center;
+    letter-spacing: 5px;
+    font-size: 55px;
+    z-index:2;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 170px;
+}
+
+.retrospective .button {
+    border:4px solid #c5a54e;
+    width:25%;
+    text-align:center;
+    height:auto;
+    padding:20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40%;
+}
+
+.retrospective .button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'LibreBodoniRegular', serif;
+    color: #c5a54e;
+    padding:0;
+    margin:0;
+    font-size: 30px;
+    transition: 0.1s ease;
+}
+
+.retrospective .button:hover {
+    background-color: #c5a54e;
+    opacity:0.5;
+    transition: 0.1s ease;
+}
+
+.retrospective .button:hover a {
+    color: #0c0c0c;
+}
+
+/****** YEAR BY YEAR PART ******/
+
+#home .date {
+    text-align: center;
+    height: 600px;
+}
+
+#home .date h1{
+    font-family: 'BebasNeue', serif;
     font-weight: 300;
     color: #c5a54e;
     font-size: 32px;
-    letter-spacing: 11px;
-
-    padding-top: 150px;
+    letter-spacing: 9px;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.home .date h3{
-    font-family: Bauer, sans-serif;
+#home .date h3{
+    font-family: 'LibreBodoniRegular', serif;
     font-weight: 400;
     color: #fefefe;
-    font-size: 42px;
+    letter-spacing: 9px;
+    text-align: center;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
-.home .year-selector{
-    margin-top: 100px;
-    height: 400px;
-    background-color: red;
+#home .date .current-year {
+    font-family: 'BebasNeue', serif;
+    font-weight: 400;
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 8px;
+    cursor: pointer;
 }
 
+#home .year-selector{
+    margin-top: 20px;
+}
+
+.year-selector .content {
+    background-color: #0c0c0c;
+    width: 30%;
+    margin-left: 35%;
+    height:80%;
+    margin-top: -9%;
+}
+
+.year-selector .line {
+    width:100%;
+    height:1px;
+    border:2px solid #c5a54e;
+    margin-top:8%;
+}
+
+.year-selector .content .c1 {
+    height:20%;
+    width:1%;
+    margin-top:23%;
+    background-color:#c5a54e
+}
+
+.year-selector .content .c2 {
+    height:30%;
+    margin-left:10%;
+    margin-top:-15%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c3 {
+    height:40%;
+    margin-left:20%;
+    margin-top:-20%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c4 {
+    height:60%;
+    margin-left:30%;
+    margin-top:-30%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c5 {
+    height:80%;
+    margin-left:40%;
+    margin-top:-40%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c6 {
+    height:100%;
+    margin-left:50%;
+    margin-top:-50%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c7 {
+    height:80%;
+    margin-left:60%;
+    margin-top:-52%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c8 {
+    height:60%;
+    margin-left:70%;
+    margin-top:-39%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c9 {
+    height:40%;
+    margin-left:80%;
+    margin-top:-26.5%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c10 {
+    height:30%;
+    margin-left:90%;
+    margin-top:-20%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+.year-selector .content .c11 {
+    height:20%;
+    margin-left:100%;
+    margin-top:-12.5%;
+    width:1%;
+    background-color:#c5a54e;
+}
+
+
+
+/****** FACTS PART ******/
+
+#home .facts {
+    font-size:0;
+    width:55%;
+    height:876px;
+    margin-left:22.5%;
+    border: 4px solid #c5a54e;
+}
+
+#home .facts .left {
+    width:60%;
+    display: inline-block;
+    font-size:30px;
+    float:left;
+    border-right: 4px solid #c5a54e;
+}
+
+#home .facts .right {
+    width:40%;
+    float:right;
+    font-size:30px;
+    display: inline-block;
+}
+
+.right h4, .left h4, .left h2, .right h6, .left h6, .left h3 {
+    color: #c5a54e;
+    margin:0;
+    padding:0;
+    font-family:'BebasNeue', serif;
+    font-weight:300;
+    letter-spacing: 2px;
+}
+
+.left .left1 h3 {
+    color: #ffffff;
+    font-size:28px;
+    letter-spacing: 5px;
+    font-weight:900;
+    background-color: #0c0c0c;
+    width:90%;
+    margin-left:10%;
+    padding-left: 5%;
+    margin-top:-8%;
+}
+
+.facts .left .left1 {
+    height:310px;
+    border-bottom: 4px solid #c5a54e;
+}
+
+.facts .left .left2 {
+    height:610px;
+}
+
+.left1 h2 {
+    font-family:'BebasNeue', serif;
+    font-weight:900;
+    font-size: 220px;
+    letter-spacing: 25px;
+    float:right;
+    text-align: center;
+    width:60%;
+    margin-top:3%;
+    padding:0;
+}
+
+.left1 h6 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top:20%;
+    float:left;
+    width:31%;
+    margin-left: 9%
+}
+
+.left2 .center {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width:70%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.left2 h6 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width:31%;
+    margin-top: 46%;
+    margin-left: 9%;
+    float:left;
+}
+
+.left2 h4 {
+    font-size: 160px;
+    font-weight:900;
+    letter-spacing: 25px;
+    width:60%;
+    float:right;
+    margin-top: 40%;
+    text-align: center;
+}
+
+.left2 {
+    background: url('../img/australie-heath.png') center center no-repeat;
+    background-size: 90%
+}
+
+.left2 h6 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width:31%;
+    margin-top: 46%;
+    margin-left: 9%;
+    float:left;
+}
+
+.right1 h4, .right2 h4 {
+    font-size:50px;
+    padding:5px;
+    font-weight:900;
+    letter-spacing: 5px;
+    margin-top:10%;
+}
+
+.right1 h6, .right2 h6 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding:10px;
+}
+
+.right1 {
+    text-align:center;
+    height:350px;
+    border-bottom: 4px solid #c5a54e;
+}
+
+.right2 {
+    text-align:center;
+    height:450px;
+}
 
 /*------------------------------------*\
     DATE
 \*------------------------------------*/
 
 #date {
-    height: 100vh;
-    position: relative;
+    background-color: #0C0C0C;
 }
 
 #date .background {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url("../img/date-header.jpg") center center;
     background-size: cover;
+    position: relative;
 }
 
 #date .header {
@@ -409,7 +829,7 @@ footer li:hover:before {
     width: 250px;
     height: 145px;
     border: solid 6px #c5a54e;
-    font-family:'BebasNeue';
+    font-family:'BebasNeue', serif;
     font-weight:700;
     font-size: 60px;
     font-style:normal;
@@ -421,6 +841,28 @@ footer li:hover:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#date .vertical-line {
+    width: 2px;
+    height:calc(30% - 125px);
+    background:#c5a54e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+#date .scroll {
+    font-family:'Lato' , serif;
+    font-weight:100;
+    font-size: 15px;
+    font-style:normal;
+    color: #c5a54e;
+    position: absolute;
+    bottom: calc(30% - 125px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 #date .image-container {
@@ -449,7 +891,7 @@ footer li:hover:before {
 }
 
 #date .previous-year {
-    font-family:'BebasNeue';
+    font-family:'BebasNeue', serif;
     font-weight:400;
     font-size: 25px;
     font-style:normal;
@@ -458,6 +900,24 @@ footer li:hover:before {
     position: absolute;
     top: 52%;
     left: 2%;
+}
+
+#date .next-year {
+    font-family:'BebasNeue', serif;
+    font-weight:400;
+    font-size: 25px;
+    font-style:normal;
+    letter-spacing: 4px;
+    color: #c5a54e;
+    position: absolute;
+    top: 52%;
+    right: 2%;
+}
+
+#date .previous-year a, #date .next-year a{
+    text-decoration: none;
+    color: #c5a54e;
+    cursor: pointer;
 }
 
 
@@ -471,30 +931,382 @@ footer li:hover:before {
 
 }
 
-#date .next-year {
-    font-family:'BebasNeue';
+#date .information {
+    text-align: center;
+    color: #c4c4c4;
+}
+
+#date .information .info {
+    margin: 50px auto;
+}
+
+#date .information h4 {
+    color: #C5A54E;
+    font-family:'BebasNeue', serif;
     font-weight:400;
     font-size: 25px;
     font-style:normal;
+    text-align: center;
+    text-transform: uppercase;
     letter-spacing: 4px;
-    color: #605c52;
+    margin-bottom: 15px;
+}
+
+#date .information p {
+    font-family: 'LibreBodoniRegular', serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style:normal;
+    letter-spacing: 4px;
+    color: #c4c4c4;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#date .information img {
+    margin: 20px auto;
+}
+
+.line {
+    width: 20%;
+    height: 2px;
+    background-color: #C5A54E;
+    margin: auto;
+}
+
+#date .ceremony-winners {
+    height: 850px;
+    background-color: #0C0C0C;
+    position: relative;
+}
+
+#date .rectangle {
+    width: 755px;
+    height: 555px;
+    border: solid 3px #c5a54e;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#date .rectangle img {
     position: absolute;
-    top: 52%;
-    right: 2%;
+    transition: 0.3s ease;
+    z-index: -2;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+#date .rectangle:hover img {
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+#date .rectangle .img-1 {
+    left: 40px;
+    top: 50px;
+}
+
+#date .rectangle:hover .img-1 {
+    left: -20px;
+    top: -50px;
+}
+
+#date .rectangle .img-2 {
+    right: 50px;
+    top: 40px;
+}
+
+#date .rectangle:hover .img-2 {
+    right: -25px;
+    top: -20px;
+}
+
+
+#date .rectangle .img-3 {
+    right: 70px;
+    bottom: 10px;
+}
+
+#date .rectangle:hover .img-3 {
+    right: -20px;
+    bottom: -20px;
+}
+
+#date .rectangle .img-4 {
+    left: 280px;
+    top: 140px;
+}
+
+#date .rectangle:hover .img-4 {
+    left: 300px;
+    top: -50px;
+}
+
+#date .rectangle .img-5 {
+    left: 10px;
+    bottom: 50px;
+}
+
+#date .rectangle:hover .img-5 {
+    left: -50px;
+    bottom: -30px;
+}
+
+#date .ceremony-winners .rectangle h2 {
+    color: #C5A54E;
+    font-family:'BebasNeue', serif;
+    font-weight:400;
+    font-size: 30px;
+    font-style:normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    top: 45%;
+}
+#date .ceremony-winners .rectangle h3 {
+    font-family: 'LibreBodoniRegular', serif;
+    font-weight: 400;
+    font-size: 35px;
+    font-style:normal;
+    text-align: center;
+    letter-spacing: 4px;
+    position: relative;
+    top: 45%;
+}
+
+#date .display-results {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: white;
+}
+
+#date .display-results .category-results {
+    font-family: 'LibreBodoniRegular', serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style:normal;
+    letter-spacing: 4px;
+    color: #c5a54e;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#date .display-results .name-results {
+    font-family:'BebasNeue', serif;
+    font-weight:400;
+    font-size: 18px;
+    font-style:normal;
+    letter-spacing: 4px;
+}
+
+/*------------------------------------*\
+    MEDIA QUERIES
+\*------------------------------------*/
+
+@media only screen and (max-width:750px) {
+
+    footer li {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:650px) {
+
+    #loader h1, #loader h2 {
+        font-size:70px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    #loader h1, #loader h2 {
+        font-size:60px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    #loader h1, #loader h2 {
+        font-size:50px;
+    }
+
+    #loader .home {
+        font-size: 25px;
+    }
+
+    #loader .arrow {
+        height: 20px;
+    }
 
 }
 
-#date .vertical-line {
-    width: 1px;
+@media only screen and (max-width:400px) {
+
+    #loader h1, #loader h2 {
+        font-size:40px;
+    }
+
+    #loader .home {
+        font-size: 20px;
+    }
+
+    #loader .arrow {
+        left: 10px;
+    }
+
+    #loader .arrow-hover {
+        transform: rotate(90deg) translate(4px, -180px) !important;
+        transition: linear 0.3s;
+
+    }
+}
+
+/*------------------------------------*\
+    CREDITS
+\*------------------------------------*/
+
+#credits .container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url('../img/bg-credits.jpg') center center;
+    background-size: cover;
+}
+
+#credits .wrapper {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    font-size: 0;
+}
+
+#credits h1 {
+    font-family: BebasNeue, serif;
+    font-weight: 400;
+    color: #c5a54e;
+    font-size: 50px;
+    letter-spacing: 11px;
+}
+
+#credits .credits {
+    display: inline-block;
+    height: 6px;
+    width: 300px;
+    background: linear-gradient(90deg, #c5a54e, transparent); /* Standard syntax */
+    background: -webkit-linear-gradient(90deg, #c5a54e, transparent); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */
+    background: -webkit-linear-gradient(left, #c5a54e, transparent);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#credits .credit {
+    font-family: 'Lato', serif;
+    font-weight: 200;
+    color: #c4c4c4;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#credits .credit a{
+    text-decoration: none;
+    color: #c5a54e;
+}
+
+#credits #team{
+    font-family: 'Lato', serif;
+    font-weight: 200;
+    color: #c4c4c4;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/*------------------------------------*\
+    GLOBAL
+\*------------------------------------*/
+
+#global {
+    height: 100vh;
+    position: relative;
+}
+
+#global .background {
+    width: 100%;
+    height: 100%;
+    background: url("../img/header-retrospective.jpg") center center;
+    background-size: cover;
+}
+
+#global .line-left {
+    width: calc(50% - 300px);
+    height:1px;
+    background:#c5a54e;
+    position: absolute;
+    top: 50%;
+}
+
+#global .line-right {
+    width: calc(50% - 300px);
+    height:1px;
+    background:#c5a54e;
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+}
+
+#global .first-graph canvas {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+
+#global .retrospective {
+    width:100%;
+    height: 75vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#global .retrospective h1 {
+    top: 51%;
+    transform: translate(-50%, -50%);
+}
+
+#global .retrospective h2 {
+    top :50%;
+    transform: translate(-50%, -50%);
+}
+
+#global .vertical-line {
+    width: 2px;
     height:calc(30% - 125px);
     background:#c5a54e;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
 }
 
-#date .scroll {
-    font-family:'Lato';
+#global .scroll {
+    font-family:'Lato' , serif;
     font-weight:100;
     font-size: 15px;
     font-style:normal;
@@ -504,4 +1316,278 @@ footer li:hover:before {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+
+#global .graph-container {
+    background-color: #0C0C0C;
+}
+
+#global .graph-container .first-graph {
+    padding-top: 5%;
+    text-align: center;
+}
+
+#global .graph-container h2,h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#global .graph-container h2 {
+    color: #C5A54E;
+    font-family:'BebasNeue', serif;
+    font-weight:400;
+    font-size: 30px;
+    font-style:normal;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+#global .graph-container h3 {
+    font-family: 'LibreBodoniRegular', serif;
+    font-weight: 400;
+    font-size: 26px;
+    font-style:normal;
+    letter-spacing: 4px;
+}
+
+#global .graph-container .second-graph, #global .graph-container .first-graph, #global .graph-container .third-graph {
+    height: 90vh;
+    position: relative;
+}
+
+#global .graph-container .second-graph {
+    text-align: center;
+}
+
+#global .graph-container .third-graph {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+#right-container {
+    display: none;
+}
+
+#center-container {
+    width:1000px;
+    left: 0 !important;
+}
+
+#dataviz {
+    width:800px;
+}
+
+#id-list {
+    background-color:#EEEEEE;
+    border:1px solid #CCCCCC;
+    margin:10px 20px 0 20px;
+    padding:5px;
+    text-align:left;
+    text-indent:2px;
+}
+
+#id-list li {
+    list-style: none;
+    margin-bottom:3px;
+
+}
+
+.query-color {
+    border:1px solid #999999;
+    float:left;
+    height:10px;
+    margin:3px 3px 0 0;
+    width:10px;
+}
+
+#update {
+    margin:10px 40px;
+}
+
+#global .button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px / 100% Arial, Helvetica, sans-serif;
+    padding: 0.5em 1em 0.55em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+/* gray */
+.gray {
+    color: #e9e9e9;
+    border: solid 1px #rgba(245, 245, 245, 0.8);
+    background: #6e6e6e;
+    background: -moz-linear-gradient(top,  #888,  #575757);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+}
+
+.gray:hover {
+    background: #616161;
+    background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');
+}
+
+.gray:active {
+    color: #afafaf;
+    background: -moz-linear-gradient(top,  #575757,  #888);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');
+}
+
+/* white */
+.white {
+    color: #606060;
+    border: solid 1px #b7b7b7;
+    background: #fff;
+    background: -moz-linear-gradient(top,  #fff,  #ededed);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+
+.white:hover {
+    background: #ededed;
+    background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+
+.white:active {
+    color: #999;
+    background: -moz-linear-gradient(top,  #ededed,  #fff);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
+
+.Label {
+    color: red;
+}
+
+input, select {
+    font-size:0.9em;
+}
+
+table {
+    margin-top:-10px;
+    margin-left:7px;
+}
+
+h4 {
+    font-size:1.1em;
+    text-decoration:none;
+    font-weight:normal;
+    color:#23A4FF;
+}
+
+a {
+    color:#23A4FF;
+}
+
+#container {
+    width: 1000px;
+    height: 600px;
+    margin:0 auto;
+    position:relative;
+    letter-spacing: 1px;
+}
+
+#left-container,
+#right-container,
+#center-container {
+    height:600px;
+    position:absolute;
+    top:0;
+}
+
+#left-container, #right-container {
+    width:200px;
+    color:#686c70;
+    text-align: left;
+    overflow: auto;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    border-bottom:1px solid #ddd;
+}
+
+#left-container {
+    left:0;
+    background-image:url('col2.png');
+    background-position:center right;
+    border-left:1px solid #ddd;
+
+}
+
+#right-container {
+    right:0;
+    background-image:url('col1.png');
+    background-position:center left;
+    border-right:1px solid #ddd;
+}
+
+#right-container h4{
+    text-indent:8px;
+}
+
+#center-container {
+    margin-top: 50px;
+    width:600px;
+    background-color:#0c0c0c;
+    color:#ccc;
+}
+
+.width-600 {
+    width: 600px !important;
+}
+
+.text {
+    margin: 7px;
+}
+
+#inner-details {
+    font-size:0.8em;
+    list-style:none;
+    margin:7px;
+}
+
+#log {
+    position:absolute;
+    top:10px;
+    font-size:1.0em;
+    font-weight:bold;
+    color:#23A4FF;
+}
+
+
+#dataviz {
+    position:relative;
+    width:600px;
+    height:600px;
+    margin:auto;
+    overflow:hidden;
+    text-align: center;
+}
+
+/*TOOLTIPS*/
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
 }
