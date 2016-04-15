@@ -556,6 +556,8 @@ footer li:hover:before {
     font-size: 40px;
     letter-spacing: 8px;
     cursor: pointer;
+    border: 2px solid#C5A54E;
+    padding: 7px 15px 5px 20px;
 }
 
 #home .year-selector{
@@ -1590,4 +1592,38 @@ a {
     font-size:10px;
     font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
     padding:7px;
+}
+
+
+.info-graph {
+    position: absolute;
+    color: #c4c4c4;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+}
+
+.info-graph-1 .square {
+    width: 10px;
+    height: 10px;
+    background-color: #C5A54E;
+}
+
+.square {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.info-graph-2 .square {
+    width: 10px;
+    height: 10px;
+    background-color: #c4c4c4;
+}
+
+.info-graph-2 {
+    position: absolute;
+    color: #c4c4c4;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
 }
